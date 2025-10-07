@@ -9,4 +9,4 @@ print("Hello")
 print("salut")
 print(28==14)
 print(9+9)
-
+print(2-2)
