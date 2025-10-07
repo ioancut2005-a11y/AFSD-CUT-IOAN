@@ -5,4 +5,4 @@ print(11+2==14)
 print(2.8==2.8)
 print(2+2+2)
 print(20==12)
-
+print("salut salut salut")
