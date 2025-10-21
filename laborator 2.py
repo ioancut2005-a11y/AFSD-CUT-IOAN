@@ -108,3 +108,4 @@ while sir[i] !="": #cat timp valoarea de la pozitie i nu e spatiu
 
 
 
+
