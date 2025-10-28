@@ -18,4 +18,10 @@ for i in range(len(elevi)):
 #A2. Nota maxima si minima
 nota_maxima=max(note)
 nota_minima=min(note)
-elevi_nota_maxima=
+print("\n Elevii cu nota maxima:")
+for i in range(len(note)):
+    if note[i] == nota_maxima:
+        print(f"{elevi[i]} nota {note[i]}")
+
+
+
