@@ -110,11 +110,3 @@ if len(note_promovati) > 0:
     print(f"Media promovati: {media_promovati:.2f}")
 else:
     print("No promovati")
-
-
-
-
-
-
-
-
