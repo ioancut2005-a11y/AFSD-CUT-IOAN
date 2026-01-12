@@ -10,6 +10,7 @@ def arata_tabla():
         for j in range(3):
             print(tabla[i][j], end=" ")
         print()
+#
 def verifica_jocul():
     #verificam liniile
     for i in range(3):
@@ -20,11 +21,11 @@ def verifica_jocul():
         if tabla[0][j] == tabla[1][j]==tabla[2][j] and tabla[0][j] != ".":
             return tabla[0][j]
     #verificam diagonalele
-    if tabla[0][0] == tabla[1][1] and tabla[2][2] and tabla[0][0] != ".":
+    if tabla[0][0] == tabla[1][1] == tabla[2][2] and tabla[0][0] != ".":
         return tabla[0][0]
-    if tabla[0][0]==tabla[1][1]==tabla[2][2] and tabla[0][0] != ".":
+    if tabla[0][0] == tabla[1][1] == tabla[2][2] and tabla[0][0] != ".":
         return tabla[0][0]
-    if tabla[0][2] == tabla[1][1] and tabla[2][0] and tabla[0][2] != ".":
+    if tabla[0][2] == tabla[1][1] == tabla[2][0] and tabla[0][2] != ".":
         return tabla[0][2]
     #verificam daca mai sunt locuri libere
     liber=False
@@ -41,9 +42,11 @@ jucator="X"
 joc_activ=True
 while joc_activ:
     arata_tabla()
+# cerem mutarea jucatorului
     print(f"\n Randul jucatorului {jucator}")
     linie_input=input("Linia(0, 1, 2):")
     coloana_input=input("Coloana(0, 1, 2):")
+# verificam daca datele introduse sunt numere
     if not linie_input.isdigit() or not coloana_input.isdigit():
         print("Trebuie sa introduci numere")
         continue
